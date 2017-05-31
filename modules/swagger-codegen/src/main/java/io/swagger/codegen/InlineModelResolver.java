@@ -384,10 +384,10 @@ public class InlineModelResolver {
 
     /**
      * Make a RefProperty
-     * 
-     * @param ref
-     * @param property
-     * @return
+     *
+     * @param ref reference name
+     * @param property property
+     * @return reference property
      */
     public Property makeRefProperty(String ref, Property property) {
         RefProperty newProperty = new RefProperty(ref);
@@ -397,9 +397,9 @@ public class InlineModelResolver {
 
     /**
      * Copy vendor extensions from Property to another Property
-     * 
-     * @param source
-     * @param target
+     *
+     * @param source source property
+     * @param target target property
      */
     public void copyVendorExtensions(Property source, AbstractProperty target) {
         Map<String, Object> vendorExtensions = source.getVendorExtensions();
